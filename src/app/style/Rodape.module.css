@@ -1,0 +1,14 @@
+.rodape {
+	position: absolute;
+	background-color: blue;
+	bottom: 0;
+}
+
+.botoes {
+	display: flex;
+	width: 99vw;
+	height: 6vh;
+	background-color: white;
+	justify-content: space-evenly;
+	align-items: center;
+}

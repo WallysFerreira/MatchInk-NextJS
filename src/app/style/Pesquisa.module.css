@@ -1,0 +1,33 @@
+.pesquisa {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	margin-top: 5%;
+	height: 5vh;
+	width: 95%;
+	border-radius: 6px;
+}
+
+.detalhes {
+	display: flex;
+	width: 90%;
+	align-items: center;
+	justify-content: start;
+	margin-left: 3%;
+}
+
+.pesquisa input {
+	margin: 0 0 0.1% 5%;
+	width: 80%;
+	border: none;
+	height: 2.5vh;
+}
+
+@media (min-width: 1080px) {
+	.pesquisa {
+		display: flex;
+		align-items: center;
+		margin-top: 1%;
+		width: 60%;
+	}
+}

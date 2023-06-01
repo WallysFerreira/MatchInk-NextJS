@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function BalaoTatuador() {
+export default function BalaoTatuador(props) {
   return (
     <section>
       <div id="insta">
@@ -9,7 +9,7 @@ export default function BalaoTatuador() {
 
       <div id="bio">
         <Image id="fotoperfil" src="/Tela6/fotoTatuadora.png" alt="Fotoperfil" width="70" height="70" />
-        <h2>Jennifer L.</h2>
+        <h2>{props.tatuador.nome}</h2>
         <p>Lorem ipsum dolor sit amet, consectetur <br />
                 adipiscing elit, sed do eiusmod tempor <br />
                 incididunt ut labore et dolore magna aliqua.

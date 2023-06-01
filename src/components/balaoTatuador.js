@@ -1,19 +1,20 @@
 import Image from "next/image";
+import '../style/Perfil.module.css';
 
 export default function BalaoTatuador(props) {
+  const tatuador = props.tatuador;
+  console.log(tatuador);
+
   return (
     <section>
-      <div id="insta">
+      <div>
         <a> <Image src="/Tela6/Instagram.svg" alt="icon instagram" width="70" height="70" /> </a>
       </div>
 
       <div id="bio">
-        <Image id="fotoperfil" src="/Tela6/fotoTatuadora.png" alt="Fotoperfil" width="70" height="70" />
-        <h2>{props.tatuador.nome}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing elit, sed do eiusmod tempor <br />
-                incididunt ut labore et dolore magna aliqua.
-        </p>
+        <Image id="fotoperfil" src={tatuador.url_foto_perfil} alt="Foto do perfil" width="300" height="300" />
+        <h2>{tatuador.nome}</h2>
+        <p>{tatuador.bio}</p>
       </div>
 
       <div id="iconcm">

@@ -3,7 +3,7 @@ import BalaoTatuador from "../components/balaoTatuador";
 import Portfolio from "../components/portfolio";
 import BalaoEstudio from "../components/balaoEstudio";
 
-export default function Perfil() {
+export default function PerfilUsuario() {
   return (
     <main>
       <BalaoTatuador />

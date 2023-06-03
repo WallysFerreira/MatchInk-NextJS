@@ -3,6 +3,7 @@ import BalaoTatuador from "../../components/balaoTatuador";
 import Portfolio from "../../components/portfolio";
 import BalaoEstudio from "../../components/balaoEstudio";
 import Image from "next/image";
+import styles from '../../style/PerfilTatuador.module.css';
 
 export async function getServerSideProps({ params }) {
   const id = params.id;
@@ -19,8 +20,12 @@ export async function getServerSideProps({ params }) {
 export default function Usuario({ tatuador }) {
   return (
     <main>
-      <Image src="/Tela6/Capa.png" alt="" width="412" height="220" />
-      <BalaoTatuador tatuador={tatuador} />
+      <div className={styles.cima}>
+        <BalaoTatuador tatuador={tatuador} />
+      </div>
+      
+      <hr />
+
       <BalaoEstudio />
     </main>
   );

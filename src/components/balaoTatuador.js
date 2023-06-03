@@ -1,12 +1,11 @@
 import Image from "next/image";
-import styles from '../style/PerfilTatuador.module.css';
+import styles from '../style/BalaoTatuador.module.css';
 
 export default function BalaoTatuador(props) {
   const tatuador = props.tatuador;
   console.log(tatuador);
 
   return (
-    <section>
       <div className={styles.container}>
         <a> <Image src="/Tela6/instagramVermelho.svg" alt="icon instagram" width="21" height="21" /> </a>
 
@@ -23,6 +22,5 @@ export default function BalaoTatuador(props) {
           <a> <Image src="/Tela6/mensagemPreto.svg" alt="icon mensagem" width="20" height="20" /> </a>
         </div>
       </div>
-    </section>
   );
 }

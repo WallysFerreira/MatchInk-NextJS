@@ -27,6 +27,10 @@ export default function Usuario({ tatuador }) {
       <hr />
 
       <BalaoEstudio />
+
+      <hr />
+
+      <Portfolio />
     </main>
   );
 }

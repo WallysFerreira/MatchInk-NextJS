@@ -22,8 +22,6 @@ export default function Usuario({ tatuador }) {
       <Image src="/Tela6/Capa.png" alt="" width="412" height="220" />
       <BalaoTatuador tatuador={tatuador} />
       <BalaoEstudio />
-      <Portfolio />
-      <Rodape />
     </main>
   );
 }

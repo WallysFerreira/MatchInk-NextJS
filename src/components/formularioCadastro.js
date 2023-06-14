@@ -77,11 +77,6 @@ async function handleSubmit(event) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': '*',
-      'Access-Control-Allow-Types': '*',
-      'Access-Control-Request-Headers': '*',
-      'Accept': '*/*',
     },
     body: JSONdata,
   }

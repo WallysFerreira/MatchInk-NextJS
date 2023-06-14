@@ -20,17 +20,20 @@ function Apresentacao() {
 
 function Formulario() {
   return (
-    <div id="campo_inputs">
-      <form action="http://teste.com/usuarios/" method="post" name="formulario_cadastro" onsubmit="alert('Enviado')" >
-        <div id="login">
-          <input type="text" name = "input_login" placeholder="Login" class="inputing" />
+    <div id="campo_inputs" onSubmit={handleSubmit}>
+      {/*<form action="http://localhost:8080/usuarios" method="post" name="formulario_cadastro">*/}
+      <form>
+        <div id="informacoes">
+          <label htmlFor='nome'>Nome</label>
+          <input type="text" name = "nome" placeholder="Seu nome" class="inputing" />
         </div>
 
         <div id="email" >
-          <input type="email" name="input_email" placeholder="Email" class="inputing" /> 
+          <label htmlFor='email'>Email</label>
+          <input type="email" name="email" placeholder="Email" class="inputing" /> 
         </div>
 
-        <div id="senha" >
+        {/*<div id="senha" >
           <input type="password" name="input_senha" placeholder="Senha" class="inputing" />
         </div>
 
@@ -45,7 +48,7 @@ function Formulario() {
               <label>Profissional</label>
             </li>
           </ul>   
-        </div>
+        </div>*/}
 
         <button type="submit">
           Cadastrar
@@ -54,6 +57,24 @@ function Formulario() {
     </div>
 
   );
+}
+
+async function handleSubmit(event) {
+  event.preventDefault();
+
+  const data = {
+    nome: event.target.nome.value,
+    email: event.target.email.value,
+  }
+
+  const JSONdata = JSON.stringify(data); 
+
+  console.log(JSONdata);
+
+  const endpoit = 'http://localhost:8080/usuarios';
+
+  const options = {
+  }
 }
 
 export default function FormularioCadastro() {

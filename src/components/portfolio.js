@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import styles from '../style/Portfolio.module.css';
 
 export default function Portfolio() {
   return (
@@ -8,7 +9,7 @@ export default function Portfolio() {
       <Fotos />
       
       <div id="adicionar">
-        <a> <Image src="/Tela6/Add.svg" alt="icon adicionar" width="19" height="19" /> </a>
+        <a> <Image src="/Tela6/Add.svg" alt="icon adicionar" width="50" height="50" /> </a>
       </div> 
     </section>
   );
@@ -16,7 +17,7 @@ export default function Portfolio() {
 
 export function Avaliacao() {
   return (
-    <div id="avaliacao">
+    <div className={styles.avaliacao}>
       <div>
         <Image src="/Tela6/likePreto.svg" alt="icon like" width="19" height="19" />
           <p>777</p>

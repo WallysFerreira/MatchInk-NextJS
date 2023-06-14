@@ -71,10 +71,26 @@ async function handleSubmit(event) {
 
   console.log(JSONdata);
 
-  const endpoit = 'http://localhost:8080/usuarios';
+  const endpoint = 'http://localhost:8080/usuarios';
 
   const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': '*',
+      'Access-Control-Allow-Types': '*',
+      'Access-Control-Request-Headers': '*',
+      'Accept': '*/*',
+    },
+    body: JSONdata,
   }
+
+  const response = await fetch(endpoint, options);
+
+  const result = await response.json();
+
+  console.log(result);
 }
 
 export default function FormularioCadastro() {

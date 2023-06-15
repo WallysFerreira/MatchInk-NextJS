@@ -3,7 +3,6 @@ import styles from '../style/BalaoTatuador.module.css';
 
 export default function BalaoTatuador(props) {
   const tatuador = props.tatuador;
-  console.log(tatuador);
 
   return (
       <div className={styles.container}>

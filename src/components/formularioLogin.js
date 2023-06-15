@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FormularioLogin() {
   return (
-    <form action="Local onde vai mandar os arquivos" method="post" onsubmit="alert('Enviado')">
+    <form action="" method="post" onsubmit="alert('Enviado')">
       <div id="login">
         <div id="email_input">
           <Image src="/Tela2/usuarioLogin.svg" alt=" Icone de usuário, é apenas um contorno da cabeça e ombros de uma pessoa, totalmente preto." id="iconeUsuario" width="63" height="63" />

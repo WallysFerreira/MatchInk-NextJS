@@ -21,7 +21,6 @@ function Apresentacao() {
 function Formulario() {
   return (
     <div id="campo_inputs" onSubmit={handleSubmit}>
-      {/*<form action="http://localhost:8080/usuarios" method="post" name="formulario_cadastro">*/}
       <form>
         <div id="informacoes">
           <label htmlFor='nome'>Nome</label>
@@ -35,20 +34,20 @@ function Formulario() {
 
         {/*<div id="senha" >
           <input type="password" name="input_senha" placeholder="Senha" class="inputing" />
-        </div>
+        </div>*/}
 
         <div id="tipo_conta"> 
           <ul>
             <li>
-              <input type="radio" name="conta_tipo" /> <br />
+              <input value={false} type="radio" name="conta_tipo" /> <br />
               <label>Cliente</label>
             </li>
             <li> 
-              <input type="radio" name="conta_tipo" /> <br />
+              <input value={true} type="radio" name="conta_tipo" /> <br />
               <label>Profissional</label>
             </li>
           </ul>   
-        </div>*/}
+        </div>
 
         <button type="submit">
           Cadastrar
@@ -65,6 +64,7 @@ async function handleSubmit(event) {
   const data = {
     nome: event.target.nome.value,
     email: event.target.email.value,
+    tatuador: event.target.conta_tipo.value,
   }
 
   const JSONdata = JSON.stringify(data); 

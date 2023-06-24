@@ -22,6 +22,7 @@ export default function Estudio({ estudio }) {
           <h1>{estudio.nota}/10</h1>
         </div>
       </div>
+
       <Rodape />
     </main>
   );

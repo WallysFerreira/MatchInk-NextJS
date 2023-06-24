@@ -26,7 +26,7 @@ export default function Usuario({ tatuador }) {
       
       <hr />
 
-      <BalaoEstudio />
+      <BalaoEstudio estudio=/>
 
       <hr />
 
